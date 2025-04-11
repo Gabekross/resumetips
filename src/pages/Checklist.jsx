@@ -17,7 +17,7 @@ export default function Checklist() {
       <ul className="list-disc pl-6 space-y-2">
         {items.map(({ label, path }, idx) => (
           <li key={idx} className="text-lg">
-            <Link to={path} className="text-blue-600 hover:underline">
+            <Link to={path} className="text-blue-600 hover:text-blue-800 transition-colors duration-200 underline-offset-2 hover:underline">
               {label}
             </Link>
           </li>
