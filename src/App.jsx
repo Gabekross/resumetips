@@ -1,4 +1,3 @@
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -16,10 +15,9 @@ import Achievements from './pages/checklist/Achievements';
 import Education from './pages/checklist/Education';
 import Skills from './pages/checklist/Skills';
 import Formatting from './pages/checklist/Formatting';
-import ListingDuties from './pages/checklist/ListingDuties';
 import VagueTerms from './pages/checklist/VagueTerms';
+import ListingDuties from './pages/checklist/ListingDuties';
 
-import './App.css';
 
 export default function App() {
   return (
@@ -30,12 +28,6 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/checklist" element={<Checklist />} />
-            <Route path="/template" element={<Template />} />
-            <Route path="/notes" element={<Notes />} />
-            <Route path="/resources" element={<Resources />} />
-            <Route path="/qna" element={<QnA />} />
-            <Route path="/quiz" element={<Quiz />} />
-            <Route path="/admin/qna" element={<AdminQnA />} />
             <Route path="/checklist/contact-info" element={<ContactInfo />} />
             <Route path="/checklist/summary" element={<Summary />} />
             <Route path="/checklist/experience" element={<Experience />} />
@@ -43,8 +35,14 @@ export default function App() {
             <Route path="/checklist/education" element={<Education />} />
             <Route path="/checklist/skills" element={<Skills />} />
             <Route path="/checklist/formatting" element={<Formatting />} />
-            <Route path="/checklist/listing-duties" element={<ListingDuties />} />
             <Route path="/checklist/vague-terms" element={<VagueTerms />} />
+            <Route path="/checklist/listing-duties" element={<ListingDuties />} />
+            <Route path="/template" element={<Template />} />
+            <Route path="/notes" element={<Notes />} />
+            <Route path="/resources" element={<Resources />} />
+            <Route path="/qna" element={<QnA />} />
+            <Route path="/quiz" element={<Quiz />} />
+            <Route path="/admin/qna" element={<AdminQnA />} />
           </Routes>
         </main>
       </div>
