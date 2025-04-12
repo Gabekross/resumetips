@@ -1,22 +1,74 @@
 import { useState } from 'react';
 
-const questions = [
+const questions = [ 
   {
     question: "What’s the best font size for resumes?",
     options: ["10 pt", "12 pt", "14 pt", "16 pt"],
     answer: 1
   },
   {
-    question: "What should go at the top of your resume?",
-    options: ["Skills", "Education", "Contact Info & Summary", "References"],
-    answer: 2
+    question: "What’s the ideal length for a resume for most professionals?",
+    options: ["1–2 pages", "3–4 pages", "As many pages as needed", "One paragraph"],
+    answer: 0
   },
   {
     question: "Should you include a photo on a US resume?",
     options: ["Yes", "No", "Only if it's professional", "Only for creative roles"],
     answer: 1
+  },
+  {
+    question: "Which resume file format is safest and most widely accepted?",
+    options: [".docx", ".pdf", ".txt", ".jpeg"],
+    answer: 1
+  },
+  {
+    question: "What is the purpose of using keywords in your resume?",
+    options: [
+      "To make it sound fancy",
+      "To pass Applicant Tracking Systems (ATS)",
+      "To make it longer",
+      "For SEO on Google"
+    ],
+    answer: 1
+  },
+  {
+    question: "Which of these phrases is most effective on a resume?",
+    options: [
+      "Responsible for managing projects",
+      "Worked on project teams",
+      "Managed cross-functional projects that increased efficiency by 20%",
+      "Did some project stuff"
+    ],
+    answer: 2
+  },
+  {
+    question: "Which is a resume pitfall you should avoid?",
+    options: [
+      "Tailoring the resume to the job",
+      "Using clear, action-driven bullet points",
+      "Listing vague duties without outcomes",
+      "Including measurable achievements"
+    ],
+    answer: 2
+  },
+  {
+    question: "Which of the following should you avoid using repeatedly in your resume?",
+    options: [
+      "Action verbs like 'Led' or 'Managed'",
+      "Buzzwords like 'team player' without context",
+      "Quantifiable results",
+      "Job-specific keywords"
+    ],
+    answer: 1
+  },
+  {
+    question: "What should you include at the top of your resume?",
+    options: ["Favorite quote", "Professional references", "Contact Info & Summary", "Salary expectation"],
+    answer: 2
   }
 ];
+
+
 
 export default function Quiz() {
   const [current, setCurrent] = useState(0);
