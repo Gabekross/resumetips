@@ -1,25 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-const questions = [ 
-  {
-    question: "What’s the best font size for resumes?",
-    options: ["10 pt", "12 pt", "14 pt", "16 pt"],
-    answer: 1
-  },
+const questions = [
   {
     question: "What’s the ideal length for a resume for most professionals?",
     options: ["1–2 pages", "3–4 pages", "As many pages as needed", "One paragraph"],
     answer: 0
-  },
-  {
-    question: "Should you include a photo on a US resume?",
-    options: ["Yes", "No", "Only if it's professional", "Only for creative roles"],
-    answer: 1
-  },
-  {
-    question: "Which resume file format is safest and most widely accepted?",
-    options: [".docx", ".pdf", ".txt", ".jpeg"],
-    answer: 1
   },
   {
     question: "What is the purpose of using keywords in your resume?",
@@ -60,56 +45,73 @@ const questions = [
       "Job-specific keywords"
     ],
     answer: 1
-  },
-  {
-    question: "What should you include at the top of your resume?",
-    options: ["Favorite quote", "Professional references", "Contact Info & Summary", "Salary expectation"],
-    answer: 2
   }
 ];
-
-
 
 export default function Quiz() {
   const [current, setCurrent] = useState(0);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
+  const [showGameLink, setShowGameLink] = useState(false);
 
   const handleAnswer = (index) => {
     if (index === questions[current].answer) {
       setScore(score + 1);
     }
-    if (current + 1 < questions.length) {
-      setCurrent(current + 1);
+
+    const next = current + 1;
+    if (next < questions.length) {
+      setCurrent(next);
     } else {
       setShowScore(true);
     }
   };
 
-  if (showScore) {
-    return (
-      <div className="max-w-xl mx-auto text-center">
-        <h2 className="text-2xl font-bold text-blue-700 mb-4">Quiz Completed!</h2>
-        <p className="text-lg">You scored {score} out of {questions.length}.</p>
-      </div>
-    );
-  }
+  useEffect(() => {
+    if (showScore && score === questions.length) {
+      setShowGameLink(true);
+    }
+  }, [showScore, score]);
 
   return (
-    <div className="max-w-xl mx-auto">
-      <h2 className="text-2xl font-bold text-blue-700 mb-4">Quick Resume Quiz</h2>
-      <div className="mb-6">
-        <p className="text-lg font-medium mb-2">{questions[current].question}</p>
-        {questions[current].options.map((option, idx) => (
-          <button
-            key={idx}
-            onClick={() => handleAnswer(idx)}
-            className="block w-full text-left px-4 py-2 mb-2 border rounded hover:bg-blue-100"
-          >
-            {option}
-          </button>
-        ))}
-      </div>
+    <div className="max-w-xl mx-auto text-center">
+      {showScore ? (
+        <>
+          <h2 className="text-2xl font-bold text-blue-700 mb-4">Quiz Completed!</h2>
+          <p className="text-lg mb-4">You scored {score} out of {questions.length}.</p>
+
+          {showGameLink && (
+            <div className="bg-green-100 p-4 rounded-lg shadow">
+              <h3 className="text-lg font-semibold text-green-700 mb-2">🎉 Perfect Score!</h3>
+              <p className="mb-3">You aced the quiz — unlock the game below!</p>
+              <a
+                href="https://gabekross.github.io/Ageguess/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+              >
+                🔓 Play the number guessing game
+              </a>
+            </div>
+          )}
+        </>
+      ) : (
+        <>
+          <h2 className="text-2xl font-bold text-blue-700 mb-4">Quick Resume Quiz</h2>
+          <div className="mb-6">
+            <p className="text-lg font-medium mb-2">{questions[current].question}</p>
+            {questions[current].options.map((option, idx) => (
+              <button
+                key={idx}
+                onClick={() => handleAnswer(idx)}
+                className="block w-full text-left px-4 py-2 mb-2 border rounded hover:bg-blue-100"
+              >
+                {option}
+              </button>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 }

@@ -6,7 +6,7 @@ export default function Navbar() {
       <ul className="flex flex-wrap gap-4 justify-center">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/checklist">Checklist</Link></li>
-        <li><Link to="/template">Download</Link></li>
+        {/* <li><Link to="/template">Download</Link></li> */}
         <li><Link to="/notes">Notes</Link></li>
         <li><Link to="/resources">Resources</Link></li>
         <li><Link to="/qna">Q&A</Link></li>
