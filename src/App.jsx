@@ -16,6 +16,9 @@ import Achievements from './pages/checklist/Achievements';
 import Education from './pages/checklist/Education';
 import Skills from './pages/checklist/Skills';
 import Formatting from './pages/checklist/Formatting';
+import ListingDuties from './pages/checklist/ListingDuties';
+import VagueTerms from './pages/checklist/VagueTerms';
+
 import './App.css';
 
 export default function App() {
@@ -40,6 +43,8 @@ export default function App() {
             <Route path="/checklist/education" element={<Education />} />
             <Route path="/checklist/skills" element={<Skills />} />
             <Route path="/checklist/formatting" element={<Formatting />} />
+            <Route path="/checklist/listing-duties" element={<ListingDuties />} />
+            <Route path="/checklist/vague-terms" element={<VagueTerms />} />
           </Routes>
         </main>
       </div>

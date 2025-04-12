@@ -18,24 +18,33 @@ export default function Home() {
 
       <h2 className="text-2xl font-semibold text-blue-600">✅ The Right Structure</h2>
       <p>
-        Use clear headings: Contact Info, Summary, Experience, Education, and Skills. Keep formatting clean and consistent. Recruiters should find what they need in seconds.
+        Use clear headings: Contact Info, Professional Summary, Work Experience, Education, and Skills. Keep formatting clean and consistent. Recruiters should find what they need in seconds.
       </p>
 
-      <h2 className="text-2xl font-semibold text-blue-600">🔍 Keywords & ATS Optimization</h2>
+      <h2 className="text-2xl font-semibold text-blue-600">🔍 Using Keywords & Aplicant Tracking System (ATS) Optimization</h2>
       <p>
         Many companies use Applicant Tracking Systems (ATS) to scan resumes. To get through, use keywords from the job description — especially for skills and job titles.
       </p>
 
-      <h2 className="text-2xl font-semibold text-blue-600">🚫 Common Resume Pitfalls</h2>
-      <ul className="list-disc pl-6 space-y-1">
-        <li>Typos and inconsistent formatting</li>
-        <li>Too long or too short (ideal: 1–2 pages)</li>
-        <li>Unprofessional email address</li>
-        <li>Listing job duties instead of achievements</li>
-        <li>Using vague terms like “responsible for”</li>
-      </ul>
+      <h2 className="text-2xl font-semibold text-blue-600">🚫 Avoid Common Resume Pitfalls</h2>
+        <ul className="list-disc pl-6 space-y-1">
+          <li>Typos</li>
+          <li>Inconsistent formatting</li>
+          <li>Too long or too short (ideal: 1–2 pages)</li>
+          <li>Unprofessional email address</li>
+          <li>
+            <a href="/checklist/listing-duties" className="text-blue-600 hover:underline">
+              Listing job duties instead of achievements
+            </a>
+          </li>
+          <li>
+            <a href="/checklist/vague-terms" className="text-blue-600 hover:underline">
+              Using vague terms like “responsible for”
+            </a>
+          </li>
+        </ul>
 
-      <h2 className="text-2xl font-semibold text-blue-600">💡 Bonus Tip</h2>
+      <h2 className="text-2xl font-semibold text-blue-600">💡 Tailor Resume to the Job</h2>
       <p>
         Customize your resume for each role — tailor your summary, reorder skills, and emphasize the most relevant experiences first.
       </p>
