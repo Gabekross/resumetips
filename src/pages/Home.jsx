@@ -19,7 +19,7 @@ export default function Home() {
           A great resume is more than a list of jobs — it's your personal marketing tool. It should clearly communicate your value, match the job you're targeting, and pass through automated screening systems.
         </p>
 
-        <h2 className="text-2xl font-semibold text-blue-600">✅ The Right Structure</h2>
+        <h2 className="text-2xl font-semibold text-blue-600">💡 The Right Structure</h2>
         <p>
           Use clear headings — Contact Info, Summary, Experience, Education, and Skills. Keep formatting clean and consistent. Recruiters should find what they need in seconds.
         </p>
@@ -59,12 +59,12 @@ export default function Home() {
           </div>
         )}
 
-        <h2 className="text-2xl font-semibold text-blue-600">🔍 Using Keywords</h2>
+        <h2 className="text-2xl font-semibold text-blue-600">💡 Using Keywords</h2>
         <p>
           Many companies use Applicant Tracking Systems (ATS) to scan resumes. To get through, use keywords from the job description — especially for skills and job titles.
         </p>
 
-        <h2 className="text-2xl font-semibold text-blue-600">🚫 Avoid Common Resume Pitfalls</h2>
+        <h2 className="text-2xl font-semibold text-blue-600">💡 Avoid Common Resume Pitfalls</h2>
         <ul className="list-disc pl-6 space-y-1">
           <li>Typos</li>
           <li>Inconsistent formatting</li>
@@ -133,29 +133,21 @@ export default function Home() {
           </div>
         )}
       </div>
-      <footer className="fixed bottom-0 left-0 w-full bg-white border-t text-center text-sm text-gray-500 py-3 z-40 flex flex-col md:flex-row items-center justify-center gap-2 flex-wrap">
-  <p>
-    © {new Date().getFullYear()} Crafted for <strong>The New MC</strong> by Gabriel Ajibade. All rights reserved.
-  </p>
-  <div className="flex gap-4">
-    {/* <a
-      href="https://www.instagram.com/gabekross/profilecard/?igsh=MTdna2RiMzUzNzZsag=="
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-600 hover:underline"
-    >
-      Instagram
-    </a> */}
-    <a
-      href="https://www.linkedin.com/in/gabriel-a-50bb6462/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-600 hover:underline"
-    >
-      LinkedIn
-    </a>
-  </div>
-</footer>
+          <footer className="mt-16 w-full bg-gradient-to-r from-blue-50 via-blue-100 to-blue-50 bg-opacity-90 text-center text-sm text-gray-700 py-4 shadow-inner backdrop-blur4">
+          <p>
+            © {new Date().getFullYear()} Crafted for <strong>The New MC</strong> by Gabriel Ajibade. All rights reserved.
+          </p>
+          <div className="mt-2 flex justify-center gap-6">
+            <a
+              href="https://www.linkedin.com/in/gabriel-a-50bb6462/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </footer>
     </>
   );
 }
