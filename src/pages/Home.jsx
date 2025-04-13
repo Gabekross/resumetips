@@ -136,9 +136,9 @@ export default function Home() {
           </div>
         )}
       </div>
-          <footer className="mt-16 w-full bg-gradient-to-r from-blue-50 via-blue-100 to-blue-50 bg-opacity-90 text-center text-sm text-gray-700 py-4 shadow-inner backdrop-blur4">
+      <footer className="fixed bottom-0 left-0 w-full bg-gradient-to-r from-blue-100/40 via-blue-200/30 to-blue-100/40 text-center text-sm text-gray-700 py-4 shadow-inner backdrop-blur-md z-50">
           <p>
-            © {new Date().getFullYear()} Crafted for <strong>The New MC</strong> by Gabekross. All rights reserved.
+            © {new Date().getFullYear()} Crafted for <strong>The New MC</strong> - Gabriel Ajibade. All rights reserved.
           </p>
           <div className="mt-2 flex justify-center gap-6">
             <a
