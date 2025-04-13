@@ -124,7 +124,7 @@ export default function Home() {
           <div className="fixed top-6 right-6 bg-blue-100 text-blue-800 p-4 rounded-xl shadow-lg max-w-xs z-50">
             <div className="flex justify-between items-start">
               <p className="text-sm pr-4">
-                Welcome to the companion app for today’s seminar! Use this page and the tabs above to follow along, take notes, and view resources.
+                Welcome to the companion app for today! Use this page and the tabs above to follow along, take notes, and view resources.
               </p>
               <button
                 onClick={() => setShowMessage(false)}
