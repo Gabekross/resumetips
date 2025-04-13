@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <div className="max-w-2xl mx-auto text-left space-y-6 pb-32">
-        <h1 className="text-3xl font-bold text-blue-700">CRAFTING A RESUME THAT STANDS OUT</h1>
+        <h1 className="text-2xl font-bold text-blue-700">CRAFTING A RESUME THAT STANDS OUT</h1>
 
         <p className="text-lg">
           A great resume is more than a list of jobs — it's your personal marketing tool. It should clearly communicate your value, match the job you're targeting, and pass through automated screening systems.
@@ -25,7 +25,7 @@ export default function Home() {
         </p>
 
         <div className="mt-6">
-          <h3 className="text-xl font-semibold text-blue-500 mb-2">📊 Visual Guide</h3>
+          <h3 className="text -1x1 font-semibold text-blue-600 mb-2">Sample resume layout</h3>
           <button onClick={() => setShowModal(true)} className="focus:outline-none">
             <img 
               src={sampleImage}  
@@ -59,36 +59,12 @@ export default function Home() {
           </div>
         )}
 
-        <h2 className="text-2xl font-semibold text-blue-600">💡 Using Keywords</h2>
+        <h2 className="text-2xl font-semibold text-blue-600">💡 Use Keywords</h2>
         <p>
           Many companies use Applicant Tracking Systems (ATS) to scan resumes. To get through, use keywords from the job description — especially for skills and job titles.
         </p>
-
-        <h2 className="text-2xl font-semibold text-blue-600">💡 Avoid Common Resume Pitfalls</h2>
-        <ul className="list-disc pl-6 space-y-1">
-          <li>Typos</li>
-          <li>Inconsistent formatting</li>
-          <li>Too long or too short (ideal: 1–2 pages)</li>
-          <li>Unprofessional email address</li>
-          <li>
-            <a href="/checklist/listing-duties" className="text-blue-600 hover:underline">
-              Listing job duties instead of achievements
-            </a>
-          </li>
-          <li>
-            <a href="/checklist/vague-terms" className="text-blue-600 hover:underline">
-              Using vague terms like “responsible for”
-            </a>
-          </li>
-        </ul>
-
-        <h2 className="text-2xl font-semibold text-blue-600">💡 Tailor Resume to the Job</h2>
-        <p>
-          Customize your resume for each role — tailor your summary, reorder skills, and emphasize the most relevant experiences first.
-        </p>
-
         <div className="mt-10">
-          <h2 className="text-2xl font-semibold text-blue-600 mb-4"> 💡 ATS vs Human Review</h2>
+          <h2 className="text-1xl font-semibold text-blue-600 mb-4"> ATS vs Human Review</h2>
           <table className="w-full table-auto border border-gray-300 text-left">
             <thead>
               <tr className="bg-blue-100 text-green-700">
@@ -116,7 +92,34 @@ export default function Home() {
             </tbody>
           </table>
         </div>
+        <h2 className="text-2xl font-semibold text-blue-600">💡 Tailor Resume to the Job</h2>
+        <p>
+          Customize your resume for each role — tailor your summary, reorder skills, and emphasize the most relevant experiences first.
+        </p>
 
+        <h2 className="text-2xl font-semibold text-blue-600">💡 Avoid Common Resume Pitfalls</h2>
+        <ul className="list-disc pl-6 space-y-1">
+          <li>Weak or passive language (no action verbs)</li>
+          <li>❌ Using one generic resume for every job</li>
+          <li>Focusing on duties instead of accomplishments</li>
+          <li>Too long or too short</li>
+          <li>Including irrelevant or outdated experience</li>
+          <li>❌ Poor formatting or inconsistent design</li>
+          <li>❌ Typos and grammar errors</li>
+          <li>Listing references or “Available upon request”</li>
+          <li>Unprofessional email address</li>
+          <li>
+            <a href="/checklist/listing-duties" className="text-blue-600 hover:underline">
+              Listing job duties instead of achievements
+            </a>
+          </li>
+          <li>
+            <a href="/checklist/vague-terms" className="text-blue-600 hover:underline">
+              Using vague terms like “responsible for”
+            </a>
+          </li>
+          <li>❌ Not showing measurable results</li>
+        </ul>
         {showMessage && (
           <div className="fixed top-6 right-6 bg-blue-100 text-blue-800 p-4 rounded-xl shadow-lg max-w-xs z-50">
             <div className="flex justify-between items-start">
@@ -135,7 +138,7 @@ export default function Home() {
       </div>
           <footer className="mt-16 w-full bg-gradient-to-r from-blue-50 via-blue-100 to-blue-50 bg-opacity-90 text-center text-sm text-gray-700 py-4 shadow-inner backdrop-blur4">
           <p>
-            © {new Date().getFullYear()} Crafted for <strong>The New MC</strong> by Gabriel Ajibade. All rights reserved.
+            © {new Date().getFullYear()} Crafted for <strong>The New MC</strong> by Gabekross. All rights reserved.
           </p>
           <div className="mt-2 flex justify-center gap-6">
             <a
