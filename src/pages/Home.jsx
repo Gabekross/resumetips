@@ -138,7 +138,7 @@ export default function Home() {
       </div>
       <footer className="fixed bottom-0 left-0 w-full bg-gradient-to-r from-blue-100/40 via-blue-200/30 to-blue-100/40 text-center text-sm text-gray-700 py-4 shadow-inner backdrop-blur-md z-50">
           <p>
-            © {new Date().getFullYear()} App Crafted for <strong>The New MC</strong> by Gabriel Ajibade. All rights reserved.
+            © {new Date().getFullYear()} App crafted for <strong>The New MC</strong> by Gabriel A. All rights reserved.
           </p>
           <div className="mt-2 flex justify-center gap-6">
             <a
