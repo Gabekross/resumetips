@@ -22,7 +22,7 @@ export default function Notes() {
 
   return (
     <div className="max-w-2xl mx-auto">
-      <h2 className="text-2xl font-bold text-blue-700 mb-4">Take Notes</h2>
+      <h2 className="text-2xl font-bold text-blue-700 mb-4">Notes</h2>
       <textarea
         value={text}
         onChange={(e) => setText(e.target.value)}
